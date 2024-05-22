@@ -1,0 +1,299 @@
+body {
+     background-color: #CCCCCC;
+}
+
+html {
+     overflow-x: hidden;
+}
+
+header {
+     position: sticky;
+     top: 0;
+     left: 0;
+     background-color: #138800;
+     z-index: 2;
+}
+
+header h2 {
+     color: #fff;
+     font-weight: 500;
+     padding-top: 5px;
+}
+
+header li {
+     font-size: 20px;
+}
+
+header .btn {
+     background-color: #B80311;
+     color: #fff;
+     font-weight: bold;
+     font-size: 18px;
+     border-radius: 20px;
+     width: 170px;
+     height: 45px;
+     text-align: center;
+}
+
+header .btn:hover {
+     background-color: #97010e;
+     color: #fff;
+}
+
+header>.container,
+footer>.container {
+     justify-content: space-between;
+     align-items: center;
+}
+
+.navbar-nav .nav-link.active {
+     color: #fff;
+     background-color: #138800;
+     border-bottom: 3px solid #fff;
+     border-radius: 0;
+}
+
+.navbar-nav .nav-link:hover {
+     border-bottom: 3px solid #fff;
+     border-radius: 0;
+     color: #fff;
+}
+
+.nav-link {
+     text-align: center;
+     color: #fff;
+     font-weight: 600;
+}
+
+#carousel-exemplo {
+     position: relative;
+}
+
+.carousel-item {
+     height: 70vh;
+     width: 100%;
+}
+
+.carousel-item img {
+     object-fit: cover;
+     height: 100%;
+}
+
+#pizzas h2 {
+     color: #B80311;
+     border-bottom: 3px solid #B80311;
+     padding-bottom: 12px;
+     margin-bottom: 40px;
+     margin-top: 35px;
+     font-weight: 600;
+     font-size: 36px;
+}
+
+.card {
+     margin-bottom: 40px;
+}
+
+.card-title {
+     color: #B80311;
+     font-weight: 600;
+     margin-bottom: 10px;
+}
+
+.card-text {
+     font-weight: 500;
+     margin-bottom: 15px;
+}
+
+.preco {
+     text-decoration: none;
+     color: #138800;
+     font-size: 18px;
+     font-weight: bold;
+}
+
+.container {
+     max-width: 1024px;
+     width: 100%;
+     margin: 0 auto;
+}
+
+.container-flex {
+     display: flex;
+}
+
+#contato {
+     margin-top: 15px;
+}
+
+#contato h2 {
+     color: #B80311;
+     font-weight: 600;
+     font-size: 36px;
+     border-bottom: 3px solid #B80311;
+     width: 400px;
+     padding-bottom: 20px;
+     margin-bottom: 20px;
+}
+
+.col-lg-6 img {
+     width: 500px;
+     height: 480px;
+     border-radius: 20px;
+     margin-top: 60px;
+}
+
+form {
+     max-width: 400px;
+}
+
+.form-campo {
+     margin-bottom: 8px;
+}
+
+.form-campo label {
+     font-weight: bold;
+     display: block;
+     color: #B80311;
+     font-size: 20px;
+     margin-bottom: 5px;
+}
+
+.form-campo input,
+.form-campo textarea {
+     width: 100%;
+     display: block;
+     padding: 8px;
+     padding-left: 15px;
+     border-radius: 20px;
+     border: none;
+}
+
+.form-campo textarea {
+     resize: none;
+     height: 100px;
+}
+
+form button {
+     max-width: 180px;
+     width: 180px;
+     height: 50px;
+     font-size: 20px;
+     font-weight: 600;
+     cursor: pointer;
+     background-color: #B80311;
+     color: #fff;
+     border: none;
+     border-radius: 50px;
+     margin-top: 20px;
+     margin-left: 110px;
+     text-align: center;
+}
+
+form button:hover {
+     background-color: #97010e;
+}
+
+footer {
+     background-color: #138800;
+     color: #fff;
+     margin-top: 60px;
+}
+
+footer li {
+     list-style: none;
+     margin-top: 10px;
+     margin-right: 20px;
+}
+
+footer li img {
+     height: 32px;
+}
+
+footer p {
+     margin-top: 12px;
+     font-weight: bold;
+}
+
+@media screen and (min-width: 820px) and (max-width: 1023px) {
+     .container {
+          max-width: 90%;
+     }
+
+     .navbar-toggler {
+          border: none;
+     }
+
+     .card img {
+          margin-bottom: 40px;
+          height: 250px;
+     }
+
+     .col-lg-6 img {
+          width: 390px;
+          height: 470px;
+          border-radius: 20px;
+          margin-top: 60px;
+     }
+
+     #contato {
+          margin-top: 15px;
+     }
+
+     #contato h2 {
+          font-size: 32px;
+          border-bottom: 3px solid #B80311;
+          width: 300px;
+          padding-bottom: 20px;
+          margin-bottom: 20px;
+     }
+
+     form {
+          max-width: 300px;
+     }
+
+     form button {
+          margin-left: 60px;
+     }
+}
+
+@media screen and (max-width: 670px) {
+     .container {
+          max-width: 90%;
+     }
+
+     .navbar-toggler {
+          border: none;
+     }
+
+     header .btn {
+          width: 165px;
+          height: 45px;
+          display: flex;
+          text-align: center;
+          margin-top: 5px;
+          margin: 5px auto;
+     }
+
+     #contato h2 {
+          font-size: 32px;
+          border-bottom: 3px solid #B80311;
+          width: 310px;
+          padding-bottom: 20px;
+          margin-bottom: 20px;
+     }
+
+     form {
+          max-width: 310px;
+     }
+
+     form button {
+          margin-left: 65px;
+     }
+
+     .col-lg-6 img {
+          width: 340px;
+          height: 300px;
+          border-radius: 20px;
+          margin-top: 50px;
+     }
+}
